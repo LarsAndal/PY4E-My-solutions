@@ -13,6 +13,6 @@ point number.
 str = "X-DSPAM-Confidence:0.8475"
 
 start = int(str.find(":")) + 1
-number = str[start:]
+number = float(str[start:])
 
 print(number)
