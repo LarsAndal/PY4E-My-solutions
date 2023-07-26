@@ -3,5 +3,6 @@
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
 	"python.linting.flake8Enabled": true,
-	"python.formatting.provider": "black"
+	"python.formatting.provider": "none",
+	"python.analysis.typeCheckingMode": "off"
 }
