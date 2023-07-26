@@ -1,4 +1,5 @@
-"""
+"""Exercise 5.
+
 Take the following Python code that stores a string:
 
 str = 'X-DSPAM-Confidence:0.8475'
@@ -9,10 +10,7 @@ function to convert the extracted string into a floating
 point number.
 
 """
-
-str = "X-DSPAM-Confidence:0.8475"
-
-start = int(str.find(":")) + 1
-number = float(str[start:])
-
+LINE = "X-DSPAM-Confidence:0.8475"
+START = int(LINE.find(":")) + 1
+number = float(LINE[START:])
 print(number)

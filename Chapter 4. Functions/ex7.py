@@ -1,6 +1,7 @@
-"""
+"""Exercise 7.
+
 Rewrite the grade program from the previous chapter using
-a function called computegrade that takes a score as its
+a function called "computegrade" that takes a score as its
 parameter and returns a grade as a string.
 
 Score   Grade
@@ -28,7 +29,15 @@ F
 
 
 def computegrade(score):
-    if score <= 1 and score >= 0:
+    """Compute the grade from score.
+
+    Args:
+        s (float): Numeric input between [0, 1]
+
+    Returns:
+        float: grade
+    """
+    if 0 <= score <= 1:
         if score >= 0.9:
             grade = "A"
         elif score >= 0.8:
@@ -40,14 +49,12 @@ def computegrade(score):
         else:
             grade = "F"
         return grade
-    else:
-        grade = "Bad score"
-        return grade
+    raise ValueError
 
 
 try:
-    score = float(input("Enter score: "))
-    grade = computegrade(score)
-    print(grade)
-except:
-    print("Bad score")
+    input_score = float(input("Enter score: "))
+    print(computegrade(input_score))
+except ValueError:
+    print("Enter numeric input between 0 and 1.")
+    print("Use '.' as decimal point.")
