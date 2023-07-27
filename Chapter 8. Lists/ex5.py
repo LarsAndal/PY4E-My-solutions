@@ -44,15 +44,14 @@ There were 27 lines in the file with From as the first word
 try:
     file = input("Enter a file name: ")
     lines = open(file, encoding="utf-8")  # pylint: disable=R1732
-    # pylint: disable=C0103
-    counter = 0
+    counter = 0  # pylint: disable=C0103
     for line in lines:
         if line.startswith("From") and not line.startswith("From:"):
             line = line.split()
             print(line[1])
-            counter = counter + 1
+            counter = counter + 1  # pylint: disable=C0103
     print(
         f"There were {counter} lines in the file with 'From' as the first word"
-    )  # noqa
+    )
 except FileNotFoundError:
     print("Invalid file name")
