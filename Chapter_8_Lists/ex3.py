@@ -19,7 +19,7 @@ for line in fhand:
 """
 
 # pylint: disable=R1732
-file_handler = open("../Chapter 7. Files/mbox-short.txt", encoding="utf-8")
+file_handler = open("../Chapter_7_Files/mbox-short.txt", encoding="utf-8")
 # pylint: enable=R1732
 for line in file_handler:
     words = line.split()

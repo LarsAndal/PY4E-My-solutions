@@ -7,7 +7,7 @@ sure it handles your new text file.
 """
 
 # pylint: disable=R1732
-file_handler = open("../Chapter 7. Files/mbox-short.txt", encoding="utf_8")
+file_handler = open("../Chapter_7_Files/mbox-short.txt", encoding="utf_8")
 # pylint: enable=R1732
 for line in file_handler:
     words = line.split()
