@@ -18,11 +18,11 @@ lint:
     - trufflehog@3.45.3
     - codespell@2.2.2
     - pylint@2.11.1
+    - remark-lint@11.0.0
 runtimes:
   enabled:
     - node@18.12.1
     - python@3.10.8
-    - go@1.18.3
 actions:
   disabled:
     - trunk-announce
