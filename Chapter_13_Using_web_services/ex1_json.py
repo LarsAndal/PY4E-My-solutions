@@ -51,7 +51,7 @@ while True:
 
     try:
         js = json.loads(data)
-    except:  # noqa, pylint: disable=W0702
+    except:  # noqa; pylint: disable=W0702
         js = None
 
     if not js or "status" not in js or js["status"] != "OK":
