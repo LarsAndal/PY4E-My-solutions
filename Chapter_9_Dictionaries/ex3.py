@@ -25,7 +25,5 @@ for line in lines:
     if line.startswith("From") and not line.startswith("From:"):
         line = line.split()
         mail_address = line[1]
-        weekday_histogram[mail_address] = (
-            weekday_histogram.get(mail_address, 0) + 1
-        )
+        weekday_histogram[mail_address] = weekday_histogram.get(mail_address, 0) + 1
 print(weekday_histogram)

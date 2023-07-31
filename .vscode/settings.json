@@ -1,8 +1,9 @@
 {
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter"
-	},
-	"python.linting.flake8Enabled": true,
-	"python.formatting.provider": "none",
-	"python.analysis.typeCheckingMode": "off"
+  "[python]": {
+    "editor.defaultFormatter": "trunk.io"
+  },
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "none",
+  "python.analysis.typeCheckingMode": "off",
+  "trunk.enableWindows": true
 }

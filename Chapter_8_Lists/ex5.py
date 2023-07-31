@@ -50,8 +50,6 @@ try:
             line = line.split()
             print(line[1])
             counter = counter + 1  # pylint: disable=C0103
-    print(
-        f"There were {counter} lines in the file with 'From' as the first word"
-    )
+    print(f"There were {counter} lines in the file with 'From' as the first word")
 except FileNotFoundError:
     print("Invalid file name")
